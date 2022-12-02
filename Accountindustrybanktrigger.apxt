@@ -1,0 +1,5 @@
+trigger Accountindustrybanktrigger on Account (before insert) {
+    if (Trigger.IsBefore && Trigger.IsInsert){
+        Accountindustrybankclass.industrybank(Trigger.New);
+    }
+}
