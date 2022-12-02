@@ -1,0 +1,13 @@
+public class Accountindustrybankclass {
+
+    public static void industrybank (List<Account>accounts)
+    {
+        for (Account a:accounts)
+        {
+            if (a.Industry=='Banking'){
+                a.Ownership='Private';
+            }
+        }
+    }
+    
+}
